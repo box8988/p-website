@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Caroline Pan Portfolio</title>
+</head>
+
+<body id="page-top">
+
+    <!-- ******************************************************************** -->
+    <!--                            Navigation Menu                           -->
+    <!-- ******************************************************************** -->
+    <nav id="navbar" class="menu fixed-top">
+        <div class="navbar-collapse collapse flex-row-reverse" ></div>
+            <img src="img\name.png" alt="carolinepan" class="logo">
+            <ul>
+                <li><a href="#page-top">Home</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ******************************************************************** -->
+    <!--                            Home Page Background                      -->
+    <!-- ******************************************************************** -->
+    <!--
+    <section class="v-header">
+      <div class="fullscreen-video-wrap">
+        <video src="img\glider.mp4" preload="true" autoplay loop muted allowfullscreen></video>
+      </div>
+    </section>
+	-->
+    <!-- ******************************************************************** -->
+    <!--                            Portfolio Section                         -->
+    <!-- ******************************************************************** -->
+    <section class="section-portfolio" id="Portfolio">
+      <div class="container responsive">
+        <h2>PORTFOLIO</h2>
+        <div class="portfolio-row">
+          <div class="p-frame filtered">
+            <img src="img\park.jfif">
+            <h4>National Park Finder</h4>
+            <p>Discover America's National Treasures in California</p>
+            <p> <a target="_blank" href="http://nps.carolinepan.net">More</a>
+               | <a target="_blank" href="https://github.com/abc1588/parkfinder">Github</a> </p>
+          </div>
+          <div class="p-frame filtered">
+            <img src="img\stock.jfif">
+            <h4>Stock Investment Tracker</h4>
+            <p>Help manage your stock investment portfolio</p>
+            <p> <a target="_blank" href="http://investment.carolinepan.net">More</a>
+            | <a target="_blank" href="https://github.com/abc1588/investmentbuddy">Github</a> </p>
+          </div>
+          <div class="p-frame filtered">
+            <img src="img\game.jfif">
+            <h4>Memory Match Game</h4>
+            <p>Play this game can stimulate your short term memory</p>
+            <p> <a target="_blank" href="http://mgame.carolinepan.net">More</a>
+            | <a target="_blank" href="https://github.com/abc1588/memorygame">Github</a> </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ******************************************************************** -->
+    <!--                            About Section                             -->
+    <!-- ******************************************************************** -->
+    <section class="section-about" id="About">
+        <div class="container">
+        <h1>About</h1>
+        <img src="img\about.png">
+        <p>Caroline Pan - Web Developer</p>
+        <span>If "All the world's a stage, and all the men and women merely players..." (Shakespeare), then the web is a canvas, and all the web developers merely artists. They paint their aspirations, electrify their dreams across the net.</span>
+        <span>I am privileged to partake in this journey, weaving codes, one line at a time.</span>
+        </div>
+    </section>
+
+    <!-- ******************************************************************** -->
+    <!--                            Contact Section                           -->
+    <!-- ******************************************************************** -->
+    <section class="section-contact" id="Contact">
+        <div class="container">
+            <h1>Contact</h1>
+            <!-- <img src="sky.png" alt="sky image"> -->
+            <div class="contact-email">
+                <img src="img\email.png" alt="email image">
+                <span class="contact-text">CarolinePan.me@gmail.com</span>
+            </div>
+            <div class="contact-phone">
+                <img src="img\phone.png" alt="phone image">
+                <span class="contact-text">(949) 385-1117</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ******************************************************************** -->
+    <!--                            Footer Section                           -->
+    <!-- ******************************************************************** -->
+    <section class="section-footer" id="Footer">
+        <div class="container">
+            <span class="copyright">Caroline Pan &copy; Copyright 2020</span>
+            <a href="#page-top" class="page-scroll scroll-to-top">
+            <img src="img\arrowup.png"> </a>
+        </div>
+    </section>
+
+
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
+
+</body>
+</html>
